@@ -1,0 +1,51 @@
+#barraDeProgresso1 {
+    margin: left;
+    width: 20%;
+    background-color: black;
+}
+
+#barra1 {
+    width: 0%;
+    height: 30px;
+    background-color: green;
+}
+
+#barraDeProgresso2 {
+    margin: left;
+    width: 20%;
+    background-color: black;
+}
+
+#barra2 {
+    width: 0%;
+    height: 30px;
+    background-color: green;
+}
+
+#barraDeProgresso3 {
+    margin: left;
+    width: 20%;
+    background-color: black;
+}
+
+#barra3 {
+    width: 0%;
+    height: 30px;
+    background-color: green;
+}
+
+#barraDeProgresso4 {
+    margin: left;
+    width: 20%;
+    background-color: black;
+}
+
+#barra4 {
+    width: 0%;
+    height: 30px;
+    background-color: green;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}

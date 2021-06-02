@@ -1,0 +1,162 @@
+VARIÁVEIS
+
+01  presença de estrias nas folhas
+02  cor das estrias amarelo-esbranquiçadas - cloróticas
+03  cor das estrias marrom-avermelhadas
+04  cor das estrias vermelhas
+05  margens indefinidas
+06  descoloração vascular nodal no colmo
+07  ausência de prejuízo
+08  forma das estrias estreitas de comprimento variável
+09  forma das estrias finas e longas
+10  necrose de folhas
+11  estrias coalescentes
+12  apodrecimento do topo
+13  presença de exsudação
+14  odor fétido
+15  presença de manchas nas folhas
+16  presença de halo clorótico
+17  presença de mancha irregular
+18  ausência de manchas coalescentes
+19  halo marrom
+
+OBJETIVO
+
+doença
+  estrias cloróticas
+  estrias pardas
+  estrias vermelhas
+  mancha parda
+  outras
+
+REGRAS
+
+REGRA 01  estrias cloróticas
+
+01 presença de estrias nas folhas
+02 cor das estrias amarelo-esbranquiçadas - cloróticas
+05 margens indefinidas
+06 descoloração vascular nodal no colmo
+07 ausência de prejuízo
+
+REGRA 02  estrias pardas
+
+01 presença de estrias nas folhas
+03 cor das estrias marrom-avermelhadas
+08 forma das estrias estreitas de comprimento variável
+10 necrose de folhas
+11 estrias coalescentes
+
+REGRA 03  estrias vermelhas
+
+01 presença de estrias nas folhas
+09 forma das estrias finas e longas
+12 apodrecimento do topo
+04 cor das estrias vermelhas
+13 presença de exsudação
+14 odor fétido
+
+REGRA 04  mancha parda
+
+15 presença de manchas nas folhas
+16 presença de halo clorótico
+17 presença de mancha irregular
+18 ausência de manchas coalescentes
+19 halo marrom
+
+PERGUNTAS
+
+01
+  Variável:presença de estrias nas folhas
+  Pergunta:"Há estrias nas folhas?"
+  Motivo:""
+
+02
+  Variável:cor das estrias amarelo-esbranquiçadas - cloróticas
+  Pergunta:"A cor que melhor descreve as estrias é amarelo-esbranquiçada - clorótica?"
+  Motivo:"A cor das estrias pode ajudar a identificar a doença."
+
+03
+  Variável:cor das estrias marrom-avermelhadas
+  Pergunta:"A cor que melhor descreve as estrias é marrom-avermelhada?"
+  Motivo:"A cor das estrias pode ajudar a identificar a doença."
+
+04
+  Variável:cor das estrias vermelhas
+  Pergunta:"A cor que melhor descreve as estrias é vermelha?"
+  Motivo:"A cor das estrias pode ajudar a identificar a doença."
+
+05
+  Variável:margens indefinidas
+  Pergunta:"As margens das estrias são indefinidas?"
+  Motivo:"Margens indefinidas das estrias são sintomas de escaldadura e estrias cloróticas."
+
+06
+  Variável:descoloração vascular nodal no colmo
+  Pergunta:"Há descoloração vascular na região nodal do colmo?"
+  Motivo:"Sintoma típico de estrias cloróticas"
+
+07
+  Variável:ausência de prejuízo
+  Pergunta:"Há prejuízo ao desenvolvimento da planta?"
+  Motivo:"Algumas doenças não chegam a causar prejuízo ao desenvolvimento da planta."
+
+08
+  Variável:forma das estrias estreitas de comprimento variável
+  Pergunta:"A forma que melhor descreve as estrias é estreitas de comprimento variável?"
+  Motivo:"A forma das estrias pode ajudar na identificação da doença."
+
+09
+  Variável:forma das estrias finas e longas
+  Pergunta:"A forma que melhor descreve as estrias é finas e longas?"
+  Motivo:"A forma das estrias pode ajudar na identificação da doença."
+
+10
+  Variável:necrose de folhas
+  Pergunta:"As estrias mais velhas estão necrosadas?"
+  Motivo:"Estrias necrosadas é sintoma típico de escaldadura"
+
+11
+  Variável:estrias coalescentes
+  Pergunta:"As estrias coalescem (juntam-se umas às outras)?"
+  Motivo:"Estrias coalescentes são sintomas de algumas doenças."
+
+12
+  Variável:apodrecimento do topo
+  Pergunta:"O topo do colmo está apodrecido?"
+  Motivo:"Sintoma típico de estrias vermelhas"
+
+13
+  Variável:presença de exsudação
+  Pergunta:"As folhas apresentam exsudação bacteriana?"
+  Motivo:"A presença de exsudação bacteriana é sintoma típico de estrias vermelhas e pode ser apresentada na gomose."
+
+14
+  Variável:odor fétido
+  Pergunta:"A planta apresenta odor fétido?"
+  Motivo:"Odor fétido é sintoma típico de estrias vermelhas e escaldadura das folhas."
+
+15
+  Variável:presença de manchas nas folhas
+  Pergunta:"Há manchas nas folhas?"
+  Motivo:"Manchas nas folhas é sintoma típico de algumas doenças."
+
+16
+  Variável:presença de halo clorótico
+  Pergunta:"há halos cloróticos (sem coloração) em volta das manchas?"
+  Motivo:""
+
+17
+  Variável:presença de mancha irregular
+  Pergunta:"O formato da mancha é irregular?"
+  Motivo:"A forma da mancha é um indicativo para diagnosticar a doença."
+
+18
+  Variável:ausência de manchas coalescentes
+  Pergunta:"As manchas coalescem (juntam-se umas às outras)?"
+  Motivo:""
+
+19
+  Variável:halo marrom
+  Pergunta:"Em torno das  manchas mais velhas, nota-se a presença de um halo amarronzado?"
+  Motivo:"A presença de um halo amarronzado em volta das manhas mais velhas é um indicativo que a doença pode ser mancha parda ou mancha anelar."

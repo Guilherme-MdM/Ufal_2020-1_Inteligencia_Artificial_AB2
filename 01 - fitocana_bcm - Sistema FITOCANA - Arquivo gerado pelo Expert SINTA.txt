@@ -1,0 +1,1100 @@
+--------------------------------------------------------------------------------
+SOBRE O SISTEMA ESPECIALISTA
+  -- Nome:    FITOCANA - Sistema de Diagnóstico de Doenças da Cana-de-Açúcar
+  -- Autores: Adilson Santos / Evandro Costa / Marcelo Cruz
+  -- Resumo:
+     	Este sistema apresenta uma tentativa de sistematizar o diagnóstico
+     de doenças da cana-de açúcar. Destina-se basicamente aos profissionais de
+     agronomia (engenheiros agrônomos e técnicos agrícolas) que atuam na região
+     canavieira do Nordeste brasileiro, como também a estudantes e pesquisadores
+     interessados no diagnóstico de doenças da cana-de-açúcar. 
+     
+     	As doenças que podem ser diagnosticadas pelo FITOCANA são:
+     
+      1. albinismo
+      2. deficiência de cobre
+      3. deficiência de fósforo
+      4. deficiência de nitrogênio
+      5. deficiência de potássio
+      6. mosaico
+      7. injúria de trips
+      8. deficiência de ferro
+      9. deficiência de manganês
+     10. deficiência de zinco
+     11. escaldadura das folhas
+     12. ...
+     13. estrias cloróticas
+     
+                  Durante a consulta, algumas perguntas possuem motivos. Pressione o botão 
+     POR QUE (quando disponível) para vê-las.
+
+Operador de maior precedência: conjunção
+Fator de confiança mínimo para aceitação de regra: 50
+
+SOBRE OS ARQUIVOS
+  Arquivo original: C:\1_Portable_Apps\sinta\SINTA\sinta32\fitocana.BCM
+  O sistema não possui recursos de ajuda.
+--------------------------------------------------------------------------------
+
+VARIÁVEIS
+
+  afinamento de colmos
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  apodrecimento do topo
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  ausência de raízes secundárias
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  bainha afetada
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  baixa brotação de gemas
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  baixo teor de sacarose
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  brotações de gemas laterais no colmo
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  brotações do colmo com estrias brancas
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  chicote com massa preta
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  chicote com película prateada
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  cor das estrias
+    Valores:
+      amarelo-esbranquiçadas (cloróticas)
+      brancas
+      marrom-avermelhadas
+      variável
+      laranja-avermelhadas
+      vermelhas
+      amarelas
+    Tipo:
+      multivalorada
+  cor das manchas
+    Valores:
+      outras
+      verde-pálidas
+      vermelhas
+    Tipo:
+      univalorada
+  crescimento irregular
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  descoloração nodal
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  descoloração vascular nodal no colmo
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  doença
+    Valores:
+      podridão vermelha
+      podridão da casca
+      raquitismo da soqueira
+      estrias vermelhas
+      estrias pardas
+      gomose
+      mancha amarela
+      mancha ocular
+      ferrugem
+      podridão abacaxi
+      carvão
+      podridão das raízes
+      estrias cloróticas
+      estria mosqueada
+      mosaico
+      mancha anelar
+      mancha parda
+      escaldadura das folhas
+      amarelinho
+    Tipo:
+      multivalorada
+  encurtamento dos entre-nós
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  estrias acompanham nervuras secundárias
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  estrias coalescentes
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  filamento de esporos negros
+    Tipo:
+      univalorada
+  folhas atingidas
+    Valores:
+      somente as mais velhas
+      jovens e velhas
+    Tipo:
+      univalorada
+  folhas com estrias
+    Valores:
+      folhas maduras
+      todas as folhas
+      folhas jovens
+    Tipo:
+      univalorada
+  folhas mais velhas amareladas
+    Tipo:
+      univalorada
+  forma da mancha
+    Valores:
+      eliptica
+      irregular
+    Tipo:
+      univalorada
+  forma das estrias
+    Valores:
+      outras
+      estreitas de comprimento variável
+      finas e longas
+    Tipo:
+      univalorada
+  gemas laterais com chicotes
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  halo marrom
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  manchas coalescentes
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  manchas internas na região dos nós
+    Tipo:
+      univalorada
+  manchas na nervura central
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  manchas na parte interna do colmo
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  margens indefinidas
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  morte dos ponteiros
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  necrose de folhas
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  nervura central da folha amarelada
+    Tipo:
+      univalorada
+  nervura central das folhas adocicadas
+    Tipo:
+      univalorada
+  odor de abacaxi
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  odor de ácido acético no colmo
+    Tipo:
+      univalorada
+  odor fétido
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  parte da folha com estrias
+    Valores:
+      todo o limbo
+      somente extremidade distral
+    Tipo:
+      univalorada
+  perfilhamento
+    Valores:
+      irregular
+      regular
+    Tipo:
+      univalorada
+  plantas arrancadas facilmente
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  plantas raquíticas
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  pontos internos basais
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  prejuízo
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  presença de brocas
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  presença de chicote
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  presença de esporos
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  presença de estrias nas folhas
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  presença de exsudação
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  presença de halo clorótico
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  presença de manchas nas folhas
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  presença de micélio
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  presença de pústulas
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  rabo de cometa
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  raízes com extremidade avermelhadas
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  raízes pobres e superficiais
+    Tipo:
+      univalorada
+  rebolo apodrecido
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  rebolos destruídos
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  sintoma de mosaico
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  superbrotamento de touceiras
+    Valores:
+      sim
+      não
+    Tipo:
+      univalorada
+  tipo de estrias
+    Valores:
+      alongadas
+      pequenas
+    Tipo:
+      univalorada
+  touceiras pouco desenvolvidas
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+  área enxarcada
+    Valores:
+      não
+      sim
+    Tipo:
+      univalorada
+
+OBJETIVOS
+
+  doença
+
+REGRAS
+
+  Regra 1
+    SE presença de estrias nas folhas = sim
+    E  cor das estrias = brancas
+    E  necrose de folhas = sim
+    E  parte da folha com estrias = todo o limbo
+    E  brotações de gemas laterais no colmo = sim
+    E  brotações do colmo com estrias brancas = sim
+    E  apodrecimento do topo = sim
+    E  odor fétido = sim
+    ENTÃO doença = escaldadura das folhas CNF 100%
+
+  Regra 2
+    SE presença de estrias nas folhas = sim
+    E  cor das estrias = brancas
+    E  necrose de folhas = sim
+    E  brotações de gemas laterais no colmo = sim
+    E  brotações do colmo com estrias brancas = sim
+    E  apodrecimento do topo = sim
+    E  odor fétido = sim
+    ENTÃO doença = escaldadura das folhas CNF 100%
+
+  Regra 3
+    SE presença de estrias nas folhas = sim
+    E  cor das estrias = brancas
+    E  bainha afetada = sim
+    E  necrose de folhas = sim
+    E  brotações de gemas laterais no colmo = sim
+    E  brotações do colmo com estrias brancas = sim
+    E  apodrecimento do topo = sim
+    E  odor fétido = sim
+    ENTÃO doença = escaldadura das folhas CNF 100%
+
+  Regra 4
+    SE presença de estrias nas folhas = sim
+    E  cor das estrias = brancas
+    E  bainha afetada = sim
+    E  necrose de folhas = sim
+    E  parte da folha com estrias = todo o limbo
+    E  brotações de gemas laterais no colmo = sim
+    E  brotações do colmo com estrias brancas = sim
+    E  apodrecimento do topo = sim
+    E  odor fétido = sim
+    ENTÃO doença = escaldadura das folhas CNF 100%
+
+  Regra 5
+    SE presença de estrias nas folhas = sim
+    E  cor das estrias = brancas
+    E  brotações de gemas laterais no colmo = sim
+    E  brotações do colmo com estrias brancas = sim
+    ENTÃO doença = escaldadura das folhas CNF 100%
+
+  Regra 6
+    SE presença de estrias nas folhas = sim
+    E  cor das estrias = brancas
+    E  necrose de folhas = sim
+    E  brotações de gemas laterais no colmo = sim
+    ENTÃO doença = escaldadura das folhas CNF 100%
+
+  Regra 7
+    SE presença de manchas nas folhas = sim
+    E  presença de halo clorótico = sim
+    E  forma da mancha = irregular
+    E  manchas coalescentes = sim
+    E  presença de pústulas = sim
+    ENTÃO doença = ferrugem CNF 90%
+
+  Regra 8
+    SE presença de manchas nas folhas = sim
+    E  presença de halo clorótico = sim
+    E  forma da mancha = irregular
+    E  manchas coalescentes = sim
+    E  presença de esporos = sim
+    ENTÃO doença = ferrugem CNF 100%
+
+  Regra 9
+    SE presença de manchas nas folhas = sim
+    E  presença de halo clorótico = sim
+    E  forma da mancha = irregular
+    E  manchas coalescentes = sim
+    ENTÃO doença = ferrugem CNF 80%
+
+  Regra 10
+    SE presença de manchas nas folhas = sim
+    E  presença de halo clorótico = sim
+    E  forma da mancha = irregular
+    E  manchas coalescentes = não
+    E  halo marrom = sim
+    ENTÃO doença = mancha parda CNF 80%
+
+  Regra 11
+    SE presença de manchas nas folhas = sim
+    E  presença de halo clorótico = sim
+    E  forma da mancha = eliptica
+    E  presença de estrias nas folhas = sim
+    E  tipo de estrias = alongadas
+    ENTÃO doença = mancha ocular CNF 80%
+
+  Regra 12
+    SE presença de manchas nas folhas = sim
+    E  presença de halo clorótico = sim
+    E  forma da mancha = eliptica
+    E  presença de estrias nas folhas = sim
+    E  tipo de estrias = alongadas
+    E  rabo de cometa = sim
+    ENTÃO doença = mancha ocular CNF 100%
+
+  Regra 13
+    SE presença de manchas nas folhas = sim
+    E  presença de halo clorótico = não
+    E  forma da mancha = irregular
+    E  manchas coalescentes = sim
+    E  presença de micélio = sim
+    ENTÃO doença = mancha amarela CNF 90%
+
+  Regra 14
+    SE presença de manchas nas folhas = sim
+    E  presença de halo clorótico = não
+    E  forma da mancha = irregular
+    E  manchas coalescentes = sim
+    E  presença de micélio = não
+    ENTÃO doença = mancha amarela CNF 50%
+
+  Regra 15
+    SE presença de manchas nas folhas = sim
+    E  presença de halo clorótico = não
+    E  forma da mancha = irregular
+    E  manchas coalescentes = não
+    E  halo marrom = sim
+    ENTÃO doença = mancha anelar CNF 60%
+
+  Regra 16
+    SE presença de manchas nas folhas = sim
+    E  presença de halo clorótico = não
+    E  forma da mancha = irregular
+    E  manchas coalescentes = não
+    E  halo marrom = sim
+    E  folhas atingidas = somente as mais velhas
+    E  prejuízo = não
+    ENTÃO doença = mancha anelar CNF 90%
+
+  Regra 17
+    SE presença de estrias nas folhas = sim
+    E  forma das estrias = finas e longas
+    E  apodrecimento do topo = sim
+    E  cor das estrias = vermelhas
+    E  presença de exsudação = sim
+    E  odor fétido = sim
+    ENTÃO doença = estrias vermelhas CNF 100%
+
+  Regra 18
+    SE presença de estrias nas folhas = sim
+    E  cor das estrias = amarelo-esbranquiçadas (cloróticas)
+    E  margens indefinidas = sim
+    E  descoloração vascular nodal no colmo = sim
+    E  prejuízo = não
+    ENTÃO doença = estrias cloróticas CNF 70%
+
+  Regra 19
+    SE presença de estrias nas folhas = sim
+    E  cor das estrias = amarelas
+    E  cor das estrias = laranja-avermelhadas
+    E  cor das estrias = marrom-avermelhadas
+    E  folhas atingidas = somente as mais velhas
+    E  parte da folha com estrias = somente extremidade distral
+    E  presença de exsudação = sim
+    ENTÃO doença = gomose CNF 70%
+
+  Regra 20
+    SE presença de estrias nas folhas = sim
+    E  cor das estrias = variável
+    E  folhas atingidas = somente as mais velhas
+    E  parte da folha com estrias = somente extremidade distral
+    E  presença de exsudação = sim
+    ENTÃO doença = gomose CNF 70%
+
+  Regra 21
+    SE presença de estrias nas folhas = sim
+    E  cor das estrias = variável
+    E  forma das estrias = estreitas de comprimento variável
+    E  estrias acompanham nervuras secundárias = sim
+    E  parte da folha com estrias = todo o limbo
+    E  presença de exsudação = não
+    E  apodrecimento do topo = não
+    ENTÃO doença = estria mosqueada CNF 80%
+
+  Regra 22
+    SE presença de estrias nas folhas = sim
+    E  cor das estrias = brancas
+    E  cor das estrias = amarelas
+    E  cor das estrias = vermelhas
+    E  forma das estrias = estreitas de comprimento variável
+    E  estrias acompanham nervuras secundárias = sim
+    E  parte da folha com estrias = todo o limbo
+    E  presença de exsudação = não
+    E  apodrecimento do topo = não
+    ENTÃO doença = estria mosqueada CNF 80%
+
+  Regra 23
+    SE presença de estrias nas folhas = sim
+    E  cor das estrias = marrom-avermelhadas
+    E  forma das estrias = estreitas de comprimento variável
+    E  necrose de folhas = sim
+    E  estrias coalescentes = sim
+    ENTÃO doença = estrias pardas CNF 80%
+
+  Regra 24
+    SE presença de manchas nas folhas = sim
+    E  sintoma de mosaico = sim
+    E  touceiras pouco desenvolvidas = sim
+    E  encurtamento dos entre-nós = sim
+    ENTÃO doença = mosaico CNF 100%
+
+  Regra 25
+    SE presença de manchas nas folhas = sim
+    E  sintoma de mosaico = sim
+    ENTÃO doença = mosaico CNF 100%
+
+  Regra 26
+    SE presença de manchas nas folhas = sim
+    E  sintoma de mosaico = sim
+    E  touceiras pouco desenvolvidas = sim
+    ENTÃO doença = mosaico CNF 100%
+
+  Regra 27
+    SE presença de manchas nas folhas = sim
+    E  sintoma de mosaico = sim
+    E  encurtamento dos entre-nós = sim
+    ENTÃO doença = mosaico CNF 100%
+
+  Regra 28
+    SE plantas raquíticas = sim
+    E  crescimento irregular = sim
+    E  perfilhamento = irregular
+    E  pontos internos basais = sim
+    ENTÃO doença = raquitismo da soqueira CNF 100%
+
+  Regra 29
+    SE plantas raquíticas = sim
+    E  crescimento irregular = sim
+    E  perfilhamento = irregular
+    ENTÃO doença = raquitismo da soqueira CNF 60%
+
+  Regra 30
+    SE plantas raquíticas = sim
+    E  perfilhamento = irregular
+    E  pontos internos basais = sim
+    ENTÃO doença = raquitismo da soqueira CNF 100%
+
+  Regra 31
+    SE plantas raquíticas = sim
+    E  crescimento irregular = sim
+    E  pontos internos basais = sim
+    ENTÃO doença = raquitismo da soqueira CNF 100%
+
+  Regra 32
+    SE plantas raquíticas = sim
+    E  pontos internos basais = sim
+    ENTÃO doença = raquitismo da soqueira CNF 80%
+
+  Regra 33
+    SE presença de chicote = sim
+    E  chicote com película prateada = sim
+    E  chicote com massa preta = sim
+    E  superbrotamento de touceiras = sim
+    E  brotações de gemas laterais no colmo = sim
+    E  gemas laterais com chicotes = sim
+    E  afinamento de colmos = sim
+    E  descoloração nodal = sim
+    ENTÃO doença = carvão CNF 100%
+
+  Regra 34
+    SE presença de chicote = sim
+    ENTÃO doença = carvão CNF 100%
+
+  Regra 35
+    SE superbrotamento de touceiras = sim
+    E  afinamento de colmos = sim
+    E  descoloração nodal = sim
+    ENTÃO doença = carvão CNF 60%
+
+  Regra 36
+    SE presença de chicote = sim
+    E  superbrotamento de touceiras = sim
+    E  brotações de gemas laterais no colmo = sim
+    E  gemas laterais com chicotes = sim
+    ENTÃO doença = carvão CNF 100%
+
+  Regra 37
+    SE presença de chicote = sim
+    E  superbrotamento de touceiras = sim
+    E  afinamento de colmos = sim
+    E  descoloração nodal = sim
+    ENTÃO doença = carvão CNF 100%
+
+  Regra 38
+    SE manchas na nervura central = sim
+    E  cor das manchas = vermelhas
+    E  morte dos ponteiros = sim
+    E  baixo teor de sacarose = sim
+    E  presença de brocas = sim
+    E  manchas na parte interna do colmo = sim
+    ENTÃO doença = podridão vermelha CNF 100%
+
+  Regra 39
+    SE manchas na parte interna do colmo = sim
+    ENTÃO doença = podridão vermelha CNF 100%
+
+  Regra 40
+    SE manchas na nervura central = sim
+    E  cor das manchas = vermelhas
+    E  morte dos ponteiros = sim
+    E  baixo teor de sacarose = sim
+    E  presença de brocas = sim
+    ENTÃO doença = podridão vermelha CNF 80%
+
+  Regra 41
+    SE baixo teor de sacarose = sim
+    E  presença de brocas = sim
+    ENTÃO doença = podridão vermelha CNF 60%
+
+  Regra 42
+    SE morte dos ponteiros = sim
+    E  baixo teor de sacarose = sim
+    E  presença de brocas = sim
+    E  manchas na parte interna do colmo = sim
+    ENTÃO doença = podridão vermelha CNF 100%
+
+  Regra 43
+    SE baixa brotação de gemas = sim
+    E  rebolo apodrecido = sim
+    E  rebolos destruídos = sim
+    E  odor de abacaxi = sim
+    ENTÃO doença = podridão abacaxi CNF 100%
+
+  Regra 44
+    SE baixa brotação de gemas = sim
+    ENTÃO doença = podridão abacaxi CNF 50%
+
+  Regra 45
+    SE baixa brotação de gemas = sim
+    E  rebolo apodrecido = sim
+    E  rebolos destruídos = sim
+    ENTÃO doença = podridão abacaxi CNF 90%
+
+  Regra 46
+    SE baixa brotação de gemas = sim
+    E  rebolo apodrecido = sim
+    E  odor de abacaxi = sim
+    ENTÃO doença = podridão abacaxi CNF 100%
+
+  Regra 47
+    SE baixa brotação de gemas = sim
+    E  rebolo apodrecido = sim
+    ENTÃO doença = podridão abacaxi CNF 80%
+
+  Regra 48
+    SE área enxarcada = sim
+    E  baixa brotação de gemas = sim
+    E  crescimento irregular = sim
+    E  perfilhamento = irregular
+    E  plantas arrancadas facilmente = sim
+    E  raízes com extremidade avermelhadas = sim
+    E  ausência de raízes secundárias = sim
+    ENTÃO doença = podridão das raízes CNF 90%
+
+  Regra 49
+    SE área enxarcada = sim
+    E  baixa brotação de gemas = sim
+    ENTÃO doença = podridão das raízes CNF 50%
+
+  Regra 50
+    SE área enxarcada = sim
+    E  baixa brotação de gemas = sim
+    E  crescimento irregular = sim
+    E  perfilhamento = irregular
+    E  plantas arrancadas facilmente = sim
+    ENTÃO doença = podridão das raízes CNF 70%
+
+  Regra 51
+    SE área enxarcada = sim
+    E  baixa brotação de gemas = sim
+    E  crescimento irregular = sim
+    E  perfilhamento = irregular
+    E  plantas arrancadas facilmente = sim
+    E  raízes com extremidade avermelhadas = sim
+    ENTÃO doença = podridão das raízes CNF 90%
+
+  Regra 52
+    SE baixa brotação de gemas = sim
+    E  crescimento irregular = sim
+    E  perfilhamento = irregular
+    E  plantas arrancadas facilmente = sim
+    E  raízes com extremidade avermelhadas = sim
+    E  ausência de raízes secundárias = sim
+    ENTÃO doença = podridão das raízes CNF 90%
+
+  Regra 53
+    SE área enxarcada = sim
+    E  baixa brotação de gemas = sim
+    E  plantas arrancadas facilmente = sim
+    E  raízes com extremidade avermelhadas = sim
+    E  ausência de raízes secundárias = sim
+    ENTÃO doença = podridão das raízes CNF 90%
+
+  Regra 54
+    SE baixa brotação de gemas = sim
+    E  odor de ácido acético no colmo = Sim
+    E  manchas internas na região dos nós = Sim
+    E  filamento de esporos negros = Sim
+    ENTÃO doença = podridão da casca CNF 100%
+
+  Regra 55
+    SE filamento de esporos negros = Sim
+    ENTÃO doença = podridão da casca CNF 100%
+
+  Regra 56
+    SE manchas internas na região dos nós = Sim
+    E  filamento de esporos negros = Sim
+    ENTÃO doença = podridão da casca CNF 100%
+
+  Regra 57
+    SE baixa brotação de gemas = sim
+    E  odor de ácido acético no colmo = Sim
+    E  manchas internas na região dos nós = Sim
+    ENTÃO doença = podridão da casca CNF 80%
+
+  Regra 58
+    SE baixa brotação de gemas = sim
+    E  manchas internas na região dos nós = Sim
+    ENTÃO doença = podridão da casca CNF 60%
+
+  Regra 59
+    SE odor de ácido acético no colmo = Sim
+    E  manchas internas na região dos nós = Sim
+    ENTÃO doença = podridão da casca CNF 60%
+
+  Regra 60
+    SE nervura central da folha amarelada = Sim
+    E  folhas mais velhas amareladas = Sim
+    E  raízes pobres e superficiais = Sim
+    E  plantas arrancadas facilmente = sim
+    E  nervura central das folhas adocicadas = Sim
+    ENTÃO doença = amarelinho CNF 100%
+
+  Regra 61
+    SE nervura central da folha amarelada = Sim
+    E  raízes pobres e superficiais = Sim
+    E  plantas arrancadas facilmente = sim
+    E  nervura central das folhas adocicadas = Sim
+    ENTÃO doença = amarelinho CNF 100%
+
+  Regra 62
+    SE raízes pobres e superficiais = Sim
+    E  plantas arrancadas facilmente = sim
+    E  nervura central das folhas adocicadas = Sim
+    ENTÃO doença = amarelinho CNF 100%
+
+  Regra 63
+    SE nervura central da folha amarelada = Sim
+    E  nervura central das folhas adocicadas = Sim
+    ENTÃO doença = amarelinho CNF 100%
+
+  Regra 64
+    SE nervura central das folhas adocicadas = Sim
+    ENTÃO doença = amarelinho CNF 80%
+
+PERGUNTAS
+
+  Variável:afinamento de colmos
+     Pergunta:"Os colmos estão bastante finos?"
+     Motivo:"Sintoma típico de carvão.
+  Variável:apodrecimento do topo
+     Pergunta:"O topo do colmo está apodrecido?"
+     Motivo:"Sintoma típico de estrias vermelhas
+  Variável:ausência de raízes secundárias
+     Pergunta:"Há pouca ou nenhuma raíz secundária?"
+     Motivo:"Sintoma típico de podridão das raízes.
+  Variável:bainha afetada
+     Pergunta:"As estrias se prolongam pela bainha?"
+     Motivo:"Sintoma típico de escaldadura
+  Variável:baixa brotação de gemas
+     Pergunta:"Há uma baixa brotação de gemas, provocando falhas no plantio?"
+     Motivo:"Sintoma típico de podridão abacaxi.
+  Variável:baixo teor de sacarose
+     Pergunta:"Houve uma redução no teor de sacarose das plantas?"
+     Motivo:"Sintoma típico de podridão vermelha.
+  Variável:brotações de gemas laterais no colmo
+     Pergunta:"Há brotações de gemas laterais no colmo?"
+     Motivo:"Sintoma típico de escaldadura
+  Variável:brotações do colmo com estrias brancas
+     Pergunta:"As brotações no colmo possuem estrias brancas?"
+     Motivo:"Sintoma típico de escaldadura
+  Variável:chicote com massa preta
+     Pergunta:"Ao romper a película do chicote, foi observado uma massa preta semelhante a pó de carvão?"
+     Motivo:"Sintoma típico de carvão.
+  Variável:chicote com película prateada
+     Pergunta:"O chicote possui uma película prateada?"
+     Motivo:"Sintoma típico de carvão.
+  Variável:cor das estrias
+     Pergunta:"Qual a cor que melhor descreve as estrias?"
+     Motivo:"A cor das estrias pode ajudar a identificar a doença.
+  Variável:cor das manchas
+     Pergunta:"Qual a cor das manchas?"
+     Motivo:"A cor da mancha ajuda a identificar a doença.
+  Variável:crescimento irregular
+     Pergunta:"As plantas apresentam crescimento irregular?"
+     Motivo:"Sintoma típico de raquitismo da soqueira.
+  Variável:descoloração nodal
+     Pergunta:"Há descoloração dos tecidos nodais próximos ao meristema apical?"
+     Motivo:"Sintoma típico de carvão.
+  Variável:descoloração vascular nodal no colmo
+     Pergunta:"Há descoloração vascular na região nodal do colmo?"
+     Motivo:"Sintoma típico de estrias cloróticas
+  Variável:encurtamento dos entre-nós
+     Pergunta:"Há um encurtamento dos entre-nós?"
+     Motivo:"Sintoma típico de mosaico.
+  Variável:estrias acompanham nervuras secundárias
+     Pergunta:"O sentido das estrias acompanham as nervuras secundárias das folhas?"
+     Motivo:"Sintoma típico de estrias mosqueadas
+  Variável:estrias coalescentes
+     Pergunta:"As estrias coalescem (juntam-se umas às outras)?"
+     Motivo:"Estrias coalescentes são sintomas de algumas doenças.
+  Variável:filamento de esporos negros
+     Pergunta:"O colmo apresenta alguns filamentos de esporos negros?"
+     Motivo:"Sintoma típico de podridão da casca.
+  Variável:folhas atingidas
+     Pergunta:"As folhas atingidas são:"
+     Motivo:"Manchas ou estrias somente nas folhas mais são sintomas de gomose e mancha anelar.
+  Variável:folhas com estrias
+     Pergunta:"As folhas possuem estrias?"
+     Motivo:"A presença de estrias é um sintoma típico de algumas doenças.
+  Variável:folhas mais velhas amareladas
+     Pergunta:"As folhas mais velhas estão amareladas, com a nervura central arroxeada?"
+     Motivo:"Sintoma típico de amarelinho.
+  Variável:forma da mancha
+     Pergunta:"O formato da mancha é:"
+     Motivo:"A forma da mancha é um indicativo para diagnosticar a doença.
+  Variável:forma das estrias
+     Pergunta:"Qual a forma que melhor descreve as estrias?"
+     Motivo:"A forma das estrias pode ajudar na identificação da doença.
+  Variável:gemas laterais com chicotes
+     Pergunta:"As gemas laterais possuem hastes pontiagudas no ápice, semelhantes a um chicote?"
+     Motivo:"Sintoma típico de carvão.
+  Variável:halo marrom
+     Pergunta:"Em torno das  manchas mais velhas, nota-se a presença de um halo amarronzado?"
+     Motivo:"A presença de um halo amarronzado em volta das manhas mais velhas é um indicativo que a 
+            "doença pode ser mancha parda ou mancha anelar.
+  Variável:manchas coalescentes
+     Pergunta:"As manchas coalescem (juntam-se umas às outras)?"
+  Variável:manchas internas na região dos nós
+     Pergunta:"Há manchas internas na região do nós, de coloração vermelho-escuro a parda?"
+     Motivo:"Manchas internas na região dos nós é sintoma de podridão da casca.
+  Variável:manchas na nervura central
+     Pergunta:"Há manchas na nervura central?"
+     Motivo:"Sintoma típico de podridão vermelha ou amarelinho.
+  Variável:manchas na parte interna do colmo
+     Pergunta:"Há manchas vermelhas intercalas com manchas brancas na parte interna do colmo?"
+     Motivo:"Sintoma típico de podridão vermelha.
+  Variável:margens indefinidas
+     Pergunta:"As margens das estrias são indefinidas?"
+     Motivo:"Margens indefinidas das estrias são sintomas de escaldadura e estrias cloróticas.
+  Variável:morte dos ponteiros
+     Pergunta:"Algumas plantas estão com os ponteiros mortos?"
+     Motivo:"Sintoma típico de podridão vermelha.
+  Variável:necrose de folhas
+     Pergunta:"As estrias mais velhas estão necrosadas?"
+     Motivo:"Estrias necrosadas é sintoma típico de escaldadura
+  Variável:nervura central da folha amarelada
+     Pergunta:"A nervura central das folhas estão amareladas?"
+     Motivo:"Sintoma típico de amarelinho.
+  Variável:nervura central das folhas adocicadas
+     Pergunta:"A nervura central das folhas tem gosto adocicado?"
+     Motivo:"Sintoma típico de amarelinho.
+  Variável:odor de abacaxi
+     Pergunta:"O rebolo apresenta um odor típico de abacaxi e ácido acético?"
+     Motivo:"Sintoma típico de podridão abacaxi.
+  Variável:odor de ácido acético no colmo
+     Pergunta:"O colmo apresenta odor de ácido acético (semelhante a abacaxi)?"
+     Motivo:"Sintoma típico de podridão da casca.
+  Variável:odor fétido
+     Pergunta:"A planta apresenta odor fétido?"
+     Motivo:"Odor fétido é sintoma típico de estrias vermelhas e escaldadura das folhas.
+  Variável:parte da folha com estrias
+     Pergunta:"Foram encontradas estrias nas seguintes partes das folhas:"
+     Motivo:"Algumas doenças atacam apenas uma determinada região da folha:
+            "- se apenas extremidade distral -> sintoma típico de gomose
+  Variável:perfilhamento
+     Pergunta:"O perfilhamento é:"
+     Motivo:"Perfilhamento irregular é sintoma de raquitismo da soqueira.
+  Variável:plantas arrancadas facilmente
+     Pergunta:"As plantas podem ser arrancadas quando puxadas pelo colmo?"
+     Motivo:"Sintoma típico de podridão das raízes.
+  Variável:plantas raquíticas
+     Pergunta:"As plantas apresentam sintomas de raquitismo (crescimento irregular, poucos perfilhos, colmos finos e baixa produção)?"
+     Motivo:"Sintoma típico de raquitismo da soqueira.
+  Variável:pontos internos basais
+     Pergunta:"Internamente, a parte basal dos nós apresentam vírgulas ou pontos de cor alaranjado-claro a avermelhado-escuro?"
+     Motivo:"Sintoma típico de raquitismo da soqueira.
+  Variável:prejuízo
+     Pergunta:"Há prejuízo ao desenvolvimento da planta?"
+     Motivo:"Algumas doenças não chegam a causar prejuízo ao desenvolvimento da planta.
+  Variável:presença de brocas
+     Pergunta:"A planta está brocada (perfurada)?"
+     Motivo:"A ocorrência de podridão vermelha é constantemente associada a presença de brocas de cana.
+  Variável:presença de chicote
+     Pergunta:"No ápice da planta existe uma haste pontiaguda semelhante a um chicote?"
+     Motivo:"Sintoma típico de carvão.
+  Variável:presença de esporos
+     Pergunta:"Foi observada a presença de esporos na parte inferior da folha?"
+     Motivo:"obs: ao passar um pano ou papel pelo limbo foliar, se o mesmo ficar impregnado por esporos de 
+            "coloração marrom-escuro como ferrugem, é característica da doença ferrugem. 
+  Variável:presença de estrias nas folhas
+     Pergunta:"Há estrias nas folhas?"
+  Variável:presença de exsudação
+     Pergunta:"As folhas apresentam exsudação bacteriana?"
+     Motivo:"A presença de exsudação bacteriana é sintoma típico de estrias vermelhas e pode ser 
+            "apresentada na gomose.
+  Variável:presença de halo clorótico
+     Pergunta:"há halos cloróticos (sem coloração) em volta das manchas?"
+  Variável:presença de manchas nas folhas
+     Pergunta:"Há manchas nas folhas?"
+     Motivo:"Manchas nas folhas é sintoma típico de algumas doenças.
+  Variável:presença de micélio
+     Pergunta:"Foi notado a presença de micélio (fungos) na parte inferior das folhas?"
+     Motivo:"O desenvolvimento do fungo na parte inferior da folha é sintoma típico de mancha amarela.
+  Variável:presença de pústulas
+     Pergunta:"Há presença de pústulas (esporos) em alto relevo na face inferior das folhas?"
+     Motivo:"Sintoma típico de ferrujem.
+  Variável:rabo de cometa
+     Pergunta:"As estrias apresentam-se em forma de rabo de cometa?"
+     Motivo:"As estrias se desenvolvem através das nervuras secundárias da folha devido a produção de 
+            "substâncias tóxicas produzidas pelo patógeno da mancha ocular, formando um rabo de cometa.
+  Variável:raízes com extremidade avermelhadas
+     Pergunta:"As raízes mais novas apresentam extremidades avermelhadas?"
+     Motivo:"Sintoma típico de podridão das raízes.
+  Variável:raízes pobres e superficiais
+     Pergunta:"O sistema radicular da planta tem poucas raízes, sendo estas superficiais?"
+     Motivo:"Sintoma típico de podridão das raízes e amarelinho.
+  Variável:rebolo apodrecido
+     Pergunta:"O rebolo está apodrecido, tendo iniciado pelas extremidades?"
+     Motivo:"Sintoma típico de podridão abacaxi.
+  Variável:rebolos destruídos
+     Pergunta:"O rebolo está destruído, restando somente a casca e feixes fibro vasculares?"
+     Motivo:"Sintoma típico de podridão abacaxi.
+  Variável:sintoma de mosaico
+     Pergunta:"Há manchas verde-pálidas entremeadas no verde normal da folha, lembrando um mosaico?"
+     Motivo:"Sintoma típico de mosaico.
+  Variável:superbrotamento de touceiras
+     Pergunta:"Há um superbrotamento de touceiras?"
+     Motivo:"Sintoma típico de carvão.
+  Variável:tipo de estrias
+     Pergunta:"As estrias são:"
+  Variável:touceiras pouco desenvolvidas
+     Pergunta:"As touceiras afetadas estão subdesenvolvidas?"
+     Motivo:"Sintoma típico de mosaico.
+  Variável:área enxarcada
+     Pergunta:"A área apresenta enxarcamento?"
+     Motivo:"Em áreas enxarcadas há tendência a ocorrer podridão das raízes.
+
+--------------------------------------------------------------------------------
+Gerado com o Expert SINTA versão 1.1b
+(c) 1997 - Universidade Federal do Ceará
+           Laboratório de Inteligência Artificial
+           LIA/UFC
+--------------------------------------------------------------------------------

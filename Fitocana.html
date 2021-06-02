@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>FITOCANA - Sistema de Diagnóstico de Doenças da Cana-de-Açúcar</h1>
+    <h2>Seleção do banco de dados</h2>
+
+    <p>Por favor, selecione o arquivo texto.</p>
+
+    <input type="button" id="loadFile" value="Adicionar..." onclick="document.getElementById('file').click();" />
+
+    <input type='file' accept='text/plain' onchange='openFile(event)' style="display: none;" id="file" name="file" /><br><br>
+
+    <div id='output'>
+    </div>
+
+<!-- 
+    <div id='botao_proximo'>
+    </div>
+ -->
+    <div id='titulo_variaveis'>
+    </div>
+
+    <div id='variaveis_nos_botoes'>
+    </div>
+
+    <div id='titulo_regras'>
+    </div>
+
+    <div id='regras'>
+    </div>
+
+</body>
+
+<script>
+    var openFile = function (event) {
+        var input = event.target;
+
+        var reader = new FileReader();
+        reader.onload = function () {
+            var flagSecao = 0;
+            var flagRegras = 1;
+            var text = reader.result;
+
+            var lines = text.split('\n');
+
+            // Loop passando por todas as linhas
+            for (var i = 0; i < lines.length; i++) {
+                
+                // Imprimir linhas no console
+                console.log("Linha [" + i + "]: " + lines[i]);
+
+                // Passando a linha para uma variável nova
+                var string = lines[i];
+
+                // Número da linha começando com 1 e não 0
+                var numeroDaLinha = i-1;
+                
+                // Flags de controle da Secao
+                if (string.includes("VARIÁVEIS")) {
+                    flagSecao = 1;
+                    console.log("Flag da Secao: 1");
+                    document.getElementById('titulo_variaveis').insertAdjacentHTML('beforeend','<h2>Variáveis</h2>');
+                }
+                if (string.includes("OBJETIVO")){
+                    flagSecao = 2;
+                    console.log("Flag da Secao: 2");
+                }
+                if (string.includes("REGRAS")){
+                    flagSecao = 3;
+                    console.log("Flag da Secao: 3");
+                    document.getElementById('titulo_regras').insertAdjacentHTML('beforeend','<h2>Regras</h2>');
+                }
+                if (string.includes("PERGUNTAS")){
+                    flagSecao = 4;
+                    console.log("Flag da Secao: 4");
+                }
+
+                // Div VARIÀVEIS
+                if (flagSecao == 1 && string.includes("VARIÁVEIS") == false && string.length > 1) {
+                    
+                    // Cria o elemento
+                    var elementInput = document.createElement("input");
+                    
+                    // Coloca os atributos no elemento
+                    elementInput.setAttribute("type", "checkbox");
+                    elementInput.setAttribute("id", "variavel"+numeroDaLinha);
+                    elementInput.setAttribute("onclick", "onToggle('" + numeroDaLinha + "')");
+
+                    var elementLabel = document.createElement("LABEL");
+                    var textNode = document.createTextNode(lines[i]);
+                    elementLabel.setAttribute("for", "variavel"+numeroDaLinha);
+                    elementLabel.appendChild(textNode);
+
+                    // Adiciona o elemento na página 
+                    document.getElementById('variaveis_nos_botoes').appendChild(elementInput);
+                    document.getElementById("variaveis_nos_botoes").appendChild(elementLabel);
+                    document.getElementById('variaveis_nos_botoes').insertAdjacentHTML('beforeend','<br>');
+
+                } // Final da div VARIÁVEIS
+
+                // Div REGRAS
+                if (flagSecao == 3 && string.includes("REGRAS") == false && string.length > 1) {
+                    //console.log("Estou nas regras");
+
+                    if (string.includes("REGRA ")) {
+                        
+                        console.log("flagRegras: "+flagRegras)
+
+                        document.getElementById('regras').insertAdjacentHTML('beforeend','<h4>'+lines[i]+'</h4>');
+                        document.getElementById('regras').insertAdjacentHTML('beforeend',"<div id='barraDeProgresso"+flagRegras+"'><div id='barra"+flagRegras+"'></div></div>");
+                        document.getElementById('regras').insertAdjacentHTML('beforeend',"<form id='regra"+flagRegras+"'><div id='forms"+flagRegras+"'></div></form>");
+
+                        flagRegras++;
+                    }
+ 
+                    // Checkbox's das Regras
+
+                    if (string.includes("REGRA") == false && string.length > 1) {
+                        
+                        // Cria o elemento
+                        var elementInput = document.createElement("input");
+
+                        // Coloca os atributos no elemento
+                        elementInput.setAttribute("type", "checkbox");
+                        elementInput.setAttribute("id", "regraid"+parseInt(string.substring(0,3)));
+
+                        var elementLabel = document.createElement("LABEL");
+                        var textNode = document.createTextNode(lines[i]);
+                        elementLabel.setAttribute("for", "variavel"+numeroDaLinha);
+                        elementLabel.appendChild(textNode);
+
+                        // Adiciona o elemento na página
+                        var formNumber = flagRegras-1;
+                        var formString = "forms"+formNumber.toString();
+                        console.log(formString)
+                        document.getElementById(formString).appendChild(elementInput);
+                        document.getElementById(formString).appendChild(elementLabel);
+                        document.getElementById(formString).insertAdjacentHTML('beforeend','<br>');
+                    }
+
+                } // Final da div REGRAS
+
+            } // Final do loop que lê todas as linhas do arquivo
+
+            checks = document.querySelectorAll("input[type='checkbox']");
+            checks.forEach(function (box) {
+                box.addEventListener("change", function (e) {
+                    update();
+                });
+            });
+
+
+        }; // Final da função que carrega o arquivo
+        
+        reader.readAsText(input.files[0]);
+    }; // Final da variável que pega o evento de abrir o arquivo
+
+    // Função que marca as caixas das regras a medida que as caixas das variáveis são marcadas
+    function onToggle(numeroDaLinha){
+
+        console.log(numeroDaLinha);
+        if (document.querySelector('#variavel'+numeroDaLinha).checked) {
+            // if checked
+            console.log('checked: '+numeroDaLinha);
+            
+            var elms = document.querySelectorAll("[id='regraid"+numeroDaLinha+"']");
+
+            for(var i = 0; i < elms.length; i++){
+                elms[i].checked = true;
+            }
+
+        } else {
+            // if unchecked
+            console.log('unchecked');
+           
+            var elms = document.querySelectorAll("[id='regraid"+numeroDaLinha+"']");
+
+            for(var i = 0; i < elms.length; i++){
+                elms[i].checked = false;
+            }
+        }
+    }; // Fim da função que marca o checkbox
+
+    function update() {
+        var barra1 = document.getElementById("barra1");
+        var barra2 = document.getElementById("barra2");
+        var barra3 = document.getElementById("barra3");
+        var barra4 = document.getElementById("barra4");
+        
+        // Referência ao "form"
+        var regra1 = document.getElementById("regra1");
+        var regra2 = document.getElementById("regra2");
+        var regra3 = document.getElementById("regra3");
+        var regra4 = document.getElementById("regra4");
+
+        // Referência a todos 'checkboxes' dentro do "form"
+        boxes1 = regra1.querySelectorAll("input[type='checkbox']:checked");
+        boxes2 = regra2.querySelectorAll("input[type='checkbox']:checked");
+        boxes3 = regra3.querySelectorAll("input[type='checkbox']:checked");
+        boxes4 = regra4.querySelectorAll("input[type='checkbox']:checked");
+
+        // Referência ao tamanho total de 'checkboxes'
+        var checked1 = boxes1.length;
+        // console.log('Checked = boxes1.length: '+checked1)
+        var checked2 = boxes2.length;
+        var checked3 = boxes3.length;
+        var checked4 = boxes4.length;
+
+        barra1.style.width = ((checked1 / 5) * 70) + "%"; // (Marcados / Quantidade de regras) * CNF
+        barra2.style.width = ((checked2 / 5) * 80) + "%";
+        barra3.style.width = ((checked3 / 6) * 100) + "%";
+        barra4.style.width = ((checked4 / 5) * 80) + "%";
+
+        return true;
+    }
+
+</script>
+</html>

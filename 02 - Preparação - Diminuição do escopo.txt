@@ -1,0 +1,77 @@
+-> Analisando manualemnte a quantidade de regras para cada valor da variável objetivo.
+
+// Valor objetivo com apenas uma regra: Aceitos
+// Valor objetivo com quantidade de regras maior que 01: Descartados
+
+--- 
+"Qtd de regras" "Valor do objetivo"
+	"Regra #"
+		"Condição"
+		"..."
+		"Conclusão"
+---
+
+--> Aceitos:
+
+"01"	"estrias cloróticas"
+
+  Regra 18
+    SE presença de estrias nas folhas = sim
+    E  cor das estrias = amarelo-esbranquiçadas (cloróticas)
+    E  margens indefinidas = sim
+    E  descoloração vascular nodal no colmo = sim
+    E  prejuízo = não
+    ENTÃO doença = estrias cloróticas CNF 70%
+
+"01"	"estrias pardas"
+
+  Regra 23
+    SE presença de estrias nas folhas = sim
+    E  cor das estrias = marrom-avermelhadas
+    E  forma das estrias = estreitas de comprimento variável
+    E  necrose de folhas = sim
+    E  estrias coalescentes = sim
+    ENTÃO doença = estrias pardas CNF 80%
+
+"01"	"estrias vermelhas"
+
+  Regra 17
+    SE presença de estrias nas folhas = sim
+    E  forma das estrias = finas e longas
+    E  apodrecimento do topo = sim
+    E  cor das estrias = vermelhas
+    E  presença de exsudação = sim
+    E  odor fétido = sim
+    ENTÃO doença = estrias vermelhas CNF 100%
+
+"01"	"mancha parda"
+
+  Regra 10
+    SE presença de manchas nas folhas = sim
+    E  presença de halo clorótico = sim
+    E  forma da mancha = irregular
+    E  manchas coalescentes = não
+    E  halo marrom = sim
+    ENTÃO doença = mancha parda CNF 80%
+
+--> Descartados: // Valores de objetivo com regras acima de 01 foram descartados para reduzir o escopo. A lista que segue abaixo é apenas para consulta
+
+--- 
+"Qtd de regras" "Valor do objetivo"
+---
+
+"02"	"estria mosqueada"
+"02"	"gomose"
+"02"	"mancha amarela"
+"02"	"mancha anelar"
+"02"	"mancha ocular"
+"03"	"ferrugem"
+"05"	"carvão"
+"05"	"podridão abacaxi"
+"05"	"podridão vermelha"
+"06"	"escaldadura das folhas"
+"06"	"podridão da casca"
+"06"	"podridão das raízes"
+"06"	"raquitismo da soqueira"
+"07"	"amarelinho"
+"09"	"mosaico"
